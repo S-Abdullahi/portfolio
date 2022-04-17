@@ -5,14 +5,18 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+		<title>Salawu Abdullahi</title>
 
 		<!-- external CSS link -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/c31a3ebc2d.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class="p-10">
 		<header>
 			<div>
 				<h1>S-Abdullahi</h1>
@@ -25,58 +29,83 @@
 					<li>Contact</li>
 				</ul>
 			</nav>
+
+			<div class="menu-icon">
+				<i class="fa-solid fa-bars"></i>
+			</div>
 		</header>
 
-		<section>
+		<section class="about text-center mt-6 mb-6">
 			<div>
-				<div>
-					<p>You're welcome I'm</p>
-					<h1>ABDULLAHI SALAWU</h1>
+				<div class="mb-6">
+					<p>wow! you found me</p>
+					<h1 class="text-2xl"> <span>I'm </span> Abdullahi.</h1>
 				</div>
 
 				<div>
-					<div>
-						<div>
-							<h2>Abdullahi Olalekan</h2>
-							<span>Front-end Developer</span>
-						</div>
-
-						<div>
-							<span>salawu.abdullahi01@gmail.com</span>
-							<span>+234 806 666 288 57</span>
-						</div>
-
 						<p>
-							I am an eagle eye and self- motivated developer with high interest in creating outstanding UI applications. As a detailed-oriented individual, i apply agile methodology to break down project into small pieces and implementing continous iteration alongside the product owner to produce flawless functional application. 
+							I am an eagle eye and self- motivated <span>front-end developer</span> with high interest in creating outstanding UI applications. As a detailed-oriented individual, i apply agile methodology to break down project into small pieces and implementing continous iteration alongside the product owner to produce flawless functional application. 
 						</p>
-					</div>
 				</div>
 
-				<div>
+				<div class="get-in-touch">
 					<a href="#">Get in touch</a>
+				</div>
+			</div>
+
+			<div class="tools">
+				<div class="svg-con">
+					<img src="html5-svgrepo-com.svg" alt="html icon">
+					<span>HTML5</span>
+				</div>
+
+				<div class="svg-con">
+					<img src="css3-svgrepo-com.svg" alt="css icon">
+					<span>CSS3</span>
+				</div>
+
+				<div class="svg-con">
+					<img src="javascript-svgrepo-com.svg" alt="javascript icon">
+					<span>JavaScript</span>
+				</div>
+
+				<div class="svg-con">
+					<img src="tailwind-svgrepo-com.svg" alt="tailwind icon">
+					<span>Tailwind</span>
+				</div>
+
+				<div class="svg-con">
+					<img src="git-svgrepo-com.svg" alt=" git icon">
+					<span>Git</span>
+				</div>
+
+				<div class="svg-con">
+					<img src="figma-svgrepo-com.svg" alt="figma icon">
+					<span>Figma</span>
 				</div>
 			</div>
 		</section>
 		
 		
 		<!-- projects sections -->
-		<section>
+		<section class="project">
 			
 			<!-- my project mini card -->
-			<div>
-				<span>My Projects</span>
+			<div class="project-title project-card">
+				<span class="my-project">My Projects</span>
 			</div>
 
 			<!-- project card -->
-			<section>
+			<div class="project-card-container">
+			<section class="project-card">
 				<!-- project picture -->
-				<div>
-					<img src="" alt="">
+				<div class="image-con">
+					<img src="agency.png" alt="agency page">
 				</div>
 
 				<!-- project card details container -->
 				<div>
-					<div>
+					<div class="hash-tags">
 						<span>#HTML</span>
 						<span>#CSS</span>
 						<span>#responsive</span>
@@ -88,27 +117,27 @@
 					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
 
 					<!-- buttons container -->
-					<div>
+					<div class="demo-code-button">
 						<div>
-							<a href="#">Demo</a>
+							<a href="https://s-abdullahi-agency-page.netlify.app/"><i class="fa-solid fa-link"></i>Demo</a>
 						</div>
 
 						<div>
-							<a href="#">Code</a>
+							<a href="https://github.com/S-Abdullahi/agency-page"><i class="fa-solid fa-code"></i>Code</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section class="project-card">
 				<!-- project picture -->
-				<div>
-					<img src="" alt="">
+				<div class="image-con">
+					<img src="quotegenerator1.png" alt="quote generator">
 				</div>
 
 				<!-- project card details container -->
 				<div>
-					<div>
+					<div class="hash-tags">
 						<span>#HTML</span>
 						<span>#CSS</span>
 						<span>#responsive</span>
@@ -120,27 +149,27 @@
 					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
 
 					<!-- buttons container -->
-					<div>
+					<div class="demo-code-button">
 						<div>
-							<a href="#">Demo</a>
+							<a href="https://s-abdullahi-quote-generator.netlify.app/"><i class="fa-solid fa-link"></i>Demo</a>
 						</div>
 
 						<div>
-							<a href="#">Code</a>
+							<a href="https://github.com/S-Abdullahi/quote-generator"><i class="fa-solid fa-code"></i>Code</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section class="project-card">
 				<!-- project picture -->
-				<div>
-					<img src="" alt="">
+				<div class="image-con">
+					<img src="recipe1.png" alt="recipepage">
 				</div>
 
 				<!-- project card details container -->
 				<div>
-					<div>
+					<div class="hash-tags">
 						<span>#HTML</span>
 						<span>#CSS</span>
 						<span>#responsive</span>
@@ -152,27 +181,27 @@
 					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
 
 					<!-- buttons container -->
-					<div>
+					<div class="demo-code-button">
 						<div>
-							<a href="#">Demo</a>
+							<a href="https://s-abdullahi-recipe1.netlify.app/"><i class="fa-solid fa-link"></i>Demo</a>
 						</div>
 
 						<div>
-							<a href="#">Code</a>
+							<a href="https://github.com/S-Abdullahi/recipe-page"><i class="fa-solid fa-code"></i> Code</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section class="project-card">
 				<!-- project picture -->
-				<div>
-					<img src="" alt="">
+				<div class="image-con">
+					<img src="gallery1.png" alt="gallery">
 				</div>
 
 				<!-- project card details container -->
 				<div>
-					<div>
+					<div class="hash-tags">
 						<span>#HTML</span>
 						<span>#CSS</span>
 						<span>#responsive</span>
@@ -184,27 +213,27 @@
 					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
 
 					<!-- buttons container -->
-					<div>
+					<div class="demo-code-button">
 						<div>
-							<a href="#">Demo</a>
+							<a href="https://s-abullahi-gallery.netlify.app/"><i class="fa-solid fa-link"></i>Demo</a>
 						</div>
 
 						<div>
-							<a href="#">Code</a>
+							<a href="https://github.com/S-Abdullahi/gallery"><i class="fa-solid fa-code"></i> Code</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section class="project-card">
 				<!-- project picture -->
-				<div>
-					<img src="" alt="">
+				<div class="image-con">
+					<img src="interior.png" alt="interior">
 				</div>
 
 				<!-- project card details container -->
-				<div>
-					<div>
+				<div >
+					<div class="hash-tags">
 						<span>#HTML</span>
 						<span>#CSS</span>
 						<span>#responsive</span>
@@ -216,27 +245,27 @@
 					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
 
 					<!-- buttons container -->
-					<div>
+					<div class="demo-code-button">
 						<div>
-							<a href="#">Demo</a>
+							<a href="https://s-abdullahi-interior-consultant.netlify.app/"><i class="fa-solid fa-link"></i>Demo</a>
 						</div>
 
 						<div>
-							<a href="#">Code</a>
+							<a href="https://github.com/S-Abdullahi/interior-consultant"><i class="fa-solid fa-code"></i> Code</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section class="project-card">
 				<!-- project picture -->
-				<div>
-					<img src="" alt="">
+				<div class="image-con">
+					<img src="checkout.png" alt="checkout">
 				</div>
 
 				<!-- project card details container -->
 				<div>
-					<div>
+					<div class="hash-tags">
 						<span>#HTML</span>
 						<span>#CSS</span>
 						<span>#responsive</span>
@@ -248,30 +277,33 @@
 					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
 
 					<!-- buttons container -->
-					<div>
+					<div class="demo-code-button">
 						<div>
-							<a href="#">Demo</a>
+							<a href="https://s-abdullahi-checkout.netlify.app/"><i class="fa-solid fa-link"></i>Demo</a>
 						</div>
 
 						<div>
-							<a href="#">Code</a>
+							<a href="https://github.com/S-Abdullahi/checkout-page"><i class="fa-solid fa-code"></i> Code</a>
 						</div>
 					</div>
 				</div>
 			</section>
+			</div>
 
 		</section>
 
-		<section>
+		<section class="contact">
 			<div>
-				<h3>Contact</h3>
-				<p>Reach out to me on my social media pages</p>
+				<div class="contact-title">
+						<h3>Contact</h3>
+				</div>
+				
 
 				<!-- contact icons -->
-				<div>
-					<i class="fa-brands fa-linkedin-in"></i>
-					<i class="fa-brands fa-twitter"></i>
-					<i class="fa-brands fa-github"></i>
+				<div class="contact-icons">
+					<a href="https://www.linkedin.com/in/saolalekan/"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="https://twitter.com/_devfocus"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://github.com/S-Abdullahi"><i class="fa-brands fa-github"></i></a>
 					<i class="fa-solid fa-envelope"></i>
 				</div>
 			</div>
