@@ -35,6 +35,15 @@ p, span, a{
   font-weight: 300;
 }
 
+a{
+  text-decoration: none;
+  color: #31CB00;
+}
+
+.hi-there p{
+  font-size: 1.4rem;
+}
+
 .about h1{
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
@@ -52,18 +61,23 @@ p, span, a{
   max-width: 700px;
   text-align: center;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .about p span{
   color: #31CB00;
 }
 
+.about{
+  margin-bottom: 50px;
+}
+
 .project-title span, .contact h3{
   font-weight: 600;
   font-size: 1.2rem;
+  color: #31CB00;
+  text-shadow: 2px 2px 11px #000000 !important;
 }
-
 
 section p{
   line-height: 24px;
@@ -77,9 +91,28 @@ section p{
 
 }
 
+
 /* introduction section styling */
+/* hi there section */
+.hi-there{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+/* hi there hand icon */
+.hand-icon{
+  width: 20px;
+  height:20px;
+  margin-top: 70px;
+}
+
+/* get in touch button styling */
 .get-in-touch{
-  background-color: #31CB00;
+  background-color:  rgb(28 25 23);
+  box-shadow: 2px 2px 6px 0px rgba(15,1,1,1), 0px 0px 6px 0px rgba(15,1,1);
+  color: #31CB00;
+  border: 1px dotted #31CB00;
   width: fit-content;
   padding: 10px;
   margin: auto;
@@ -92,18 +125,17 @@ section p{
 /* project cards */
 
 .project-card{
-  background-color: #152614;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 2px 2px 6px 0px rgba(15,1,1,1), 0px 0px 6px 0px rgba(15,1,1);
+  box-shadow: 2px 2px 6px 0px rgba(10, 6, 6, 0.281), 0px 0px 6px 0px rgba(10, 6, 6, 0.281);
   max-width: 800px;
   margin: auto;
   margin-bottom: 20px;
-  min-width: 250px;
-
 }
 
+/* hashtags for html, css, javascript */
 .hash-tags{
+  margin-top: 10px;
   margin-bottom: 20px;
   font-weight: 300;
 }
@@ -111,10 +143,18 @@ section p{
 .project{
   margin-bottom: 60px;
 }
+.project-title{
+  max-width: 800px;
+  margin: auto !important;
+  margin-bottom: 20px !important;
+}
 
 .project-title, .contact-title{
-  background-color: #1E441E;
+  margin-bottom: 20px;
+  margin-left: 5px;
 }
+
+/* project image container */
 .image-con{
   max-width: 400px;
   max-height: 300px;
@@ -126,6 +166,8 @@ img{
   height: 100%;
   border-radius: 12px;
 }
+
+
 /* demo and code button styling */
 .demo-code-button{
   display: flex;
@@ -134,11 +176,13 @@ img{
 }
 
 .demo-code-button div{
-  background-color:#31CB00;
+  background-color:  rgb(28 25 23);
+  box-shadow: 2px 2px 6px 0px rgba(10, 6, 6, 0.281), 0px 0px 6px 0px rgba(10, 6, 6, 0.281);
+  color: #31CB00;
+  border: 1px dotted #31CB00;
   padding: 7px;
   border-radius: 6px;
   font-size: 0.8rem;
-  color: white;
   margin: 8px;
 }
 
@@ -163,13 +207,12 @@ img{
 .contact-title{
   padding: 20px;
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .contact-icons{
   height: 150px;
-  background-color: #152614;
-  box-shadow: 2px 2px 6px 0px rgba(15,1,1,1), 0px 0px 6px 0px rgba(15,1,1);
+  box-shadow: 2px 2px 6px 0px rgba(10, 6, 6, 0.281), 0px 0px 6px 0px rgba(10, 6, 6, 0.281);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,13 +221,27 @@ img{
 
 .contact-icons i{
   margin: 20px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: #31CB00;
+}
+
+.icons-div{
+  background-color: rgb(28 25 23);
+  box-shadow: 2px 2px 6px 0px rgba(15,1,1,1), 0px 0px 6px 0px rgba(15,1,1);
+  border-radius: 50%;
+  margin: 5px;
+  border: 0.5px dotted #31CB00;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* SVG STYLING */
 .svg-con{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -195,6 +252,7 @@ img{
   font-size: 0.6rem;
 }
 
+/* tools styling */
 .tools{
   display: flex;
   flex-direction: row;
@@ -202,7 +260,7 @@ img{
   justify-content: center;
   padding-left: 30px;
   padding-right: 20px;
-  box-shadow: 2px 2px 6px 0px rgba(15,1,1,1), 0px 0px 6px 0px rgba(15,1,1);
+  box-shadow: 2px 2px 6px 0px rgba(10, 6, 6, 0.281), 0px 0px 6px 0px rgba(10, 6, 6, 0.281);
   border-radius: 12px;
   max-width: 800px;
   min-width: auto;
@@ -213,18 +271,71 @@ img{
 /* footer styling */
 footer{
   text-align: center;
+  font-size: 0.5rem;
+  color: rgba(226, 232, 240, 0.568);
+
 }
 
 /* MEDIA QUERIES */
 @media (max-width:767px){
+
+  .about{
+    position: relative;
+    left: -130;
+  }
+
+  /* nav styling for mobile */
   nav{
-    display: none;
+    background-color:  rgb(28 25 23);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    margin-left: 0;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav ul li{
+    margin: 30px;
+    color: #31CB00;
+  }
+  
+  p{
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+
+  .menu-icon{
+    display: relative;
+    z-index: 10;
+    margin-right: 10px;
+  }
+  
+  .fa-xmark{
+    position: relative;
+    opacity: 0;
+    font-size: 1.2rem;
   }
 
   header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 10;
+    background-color:  rgb(28 25 23);
+    min-width: 250px;
+    box-shadow: 0 2px 6px 0px rgba(15,1,1,1);
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 3.5px 10px;
   }
 
   header i{
@@ -255,13 +366,12 @@ footer{
     align-items: center;
   }
 
-  .image-con{
-    margin-right: 30px;
-  }
 
-  .project-card-container{
-    display: grid;
-    grid-template-columns: 2;
+  .image-con{
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 30px;
+    margin-right: 30px;
   }
   
 }
