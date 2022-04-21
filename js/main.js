@@ -3,6 +3,11 @@ document.querySelector('.fa-xmark').addEventListener('click', cancelKey)
 document.querySelector('#nav-home').addEventListener('click', cancelKey)
 document.querySelector('#nav-project').addEventListener('click', cancelKey)
 document.querySelector('#nav-contact').addEventListener('click', cancelKey)
+document.querySelector('#nav-blog').addEventListener('click', cancelKey)
+
+
+
+
 
 const nav = document.querySelector('nav')
 const menu = document.querySelector('.fa-bars')
