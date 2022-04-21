@@ -14,6 +14,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
 		<script src="https://kit.fontawesome.com/c31a3ebc2d.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -26,63 +27,71 @@
 
 			<nav>
 				<ul>
-					<li>Home</li>
-					<li>Project</li>
-					<li>Contact</li>
+					<li id="nav-home"><a href="#home">Home</a></li>
+					<li id="nav-project"><a href="#project">Project</a></li>
+					<li id="nav-contact"><a href="#contact">Contact</a></li>
+					<li id="nav-blog"><a href="#">Blog</a></li>
 				</ul>
 			</nav>
 
 			<div class="menu-icon">
 				<i class="fa-solid fa-bars"></i>
+				<i class="fa-solid fa-xmark"></i>
 			</div>
 		</header>
 
-		<section class="about text-center mt-6 mb-6">
+		<section class="about text-center mt-6 mb-6" id="home">
 			<div>
-				<div class="mb-6">
-					<p>wow! you found me</p>
+				<div class="mb-6 intro">
+					<div class="hi-there">
+						<div>
+							<p>Hi there </p>
+						</div>
+						<div class="hand-icon"><img src="svg/hand-svgrepo-com.svg" alt="hand icon"></div>
+					</div>
+					
 					<h1 class="text-2xl"> <span>I'm </span> Abdullahi.</h1>
 				</div>
 
 				<div>
 						<p>
-							I am an eagle eye and self- motivated <span>front-end developer</span> with high interest in creating outstanding UI applications. As a detailed-oriented individual, i apply agile methodology to break down project into small pieces and implementing continous iteration alongside the product owner to produce flawless functional application. 
+							I am an eagle eyed, self- motivated <span>front-end developer</span> with high interest in creating outstanding UI applications. As a detailed-oriented individual, I apply agile methodology to break down project into small pieces and implementing continous iteration to produce flawless functional application. 
 						</p>
 				</div>
 
 				<div class="get-in-touch">
-					<a href="#">Get in touch</a>
+					<a href="#contact">Get in touch</a>
 				</div>
 			</div>
 
 			<div class="tools">
 				<div class="svg-con">
-					<img src="html5-svgrepo-com.svg" alt="html icon">
+					<img src="svg/html5-svgrepo-com.svg" alt="html icon">
 					<span>HTML5</span>
 				</div>
 
 				<div class="svg-con">
-					<img src="css3-svgrepo-com.svg" alt="css icon">
+					<img src="svg/css3-svgrepo-com.svg" alt="css icon">
 					<span>CSS3</span>
 				</div>
 
 				<div class="svg-con">
-					<img src="javascript-svgrepo-com.svg" alt="javascript icon">
+					<img src="svg/javascript-svgrepo-com.svg" alt="javascript icon">
 					<span>JavaScript</span>
 				</div>
 
 				<div class="svg-con">
-					<img src="tailwind-svgrepo-com.svg" alt="tailwind icon">
+					<img src="svg/tailwind-svgrepo-com.svg" alt="tailwind icon">
 					<span>Tailwind</span>
 				</div>
 
 				<div class="svg-con">
-					<img src="git-svgrepo-com.svg" alt=" git icon">
+					<img src="svg/git-svgrepo-com.svg" alt=" git icon">
 					<span>Git</span>
 				</div>
 
 				<div class="svg-con">
-					<img src="figma-svgrepo-com.svg" alt="figma icon">
+					<img src="svg/figma-svgrepo-com.svg" alt="figma icon">
 					<span>Figma</span>
 				</div>
 			</div>
@@ -90,10 +99,10 @@
 		
 		
 		<!-- projects sections -->
-		<section class="project">
+		<section class="project" id="project">
 			
 			<!-- my project mini card -->
-			<div class="project-title project-card">
+			<div class="project-title">
 				<span class="my-project">My Projects</span>
 			</div>
 
@@ -102,21 +111,23 @@
 			<section class="project-card">
 				<!-- project picture -->
 				<div class="image-con">
-					<img src="agency.png" alt="agency page">
+					<img src="picture/agency.png" alt="agency page">
 				</div>
 
 				<!-- project card details container -->
 				<div>
-					<div class="hash-tags">
-						<span>#HTML</span>
-						<span>#CSS</span>
-						<span>#responsive</span>
-					</div>
 
 						<!-- project title -->
 					<h3>Agency Page</h3>
 
-					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
+					<p>This project is a challenge on devchallenge.io. This project represent the pixel-perfect of the figma file provided. I implemented  mobile-first approach in developing this project and it is fully responsive.</p>
+
+					<!-- hash tags container -->
+					<div class="hash-tags">
+						<span>#HTML</span>
+						<span>#CSS</span>
+						<span>#Javascript</span>
+					</div>
 
 					<!-- buttons container -->
 					<div class="demo-code-button">
@@ -134,21 +145,22 @@
 			<section class="project-card">
 				<!-- project picture -->
 				<div class="image-con">
-					<img src="quotegenerator1.png" alt="quote generator">
+					<img src="picture/quotegenerator1.png" alt="quote generator">
 				</div>
 
 				<!-- project card details container -->
 				<div>
-					<div class="hash-tags">
-						<span>#HTML</span>
-						<span>#CSS</span>
-						<span>#responsive</span>
-					</div>
 
 						<!-- project title -->
 					<h3>Random Quote Generator</h3>
 
-					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
+					<p>A random quote generator built with API and it is capable of generating 1600 random quotes.</p>
+
+					<div class="hash-tags">
+						<span>#HTML</span>
+						<span>#CSS</span>
+						<span>#API</span>
+					</div>
 
 					<!-- buttons container -->
 					<div class="demo-code-button">
@@ -166,21 +178,24 @@
 			<section class="project-card">
 				<!-- project picture -->
 				<div class="image-con">
-					<img src="recipe1.png" alt="recipepage">
+					<img src="picture/portfolio.png" alt="recipepage">
 				</div>
 
 				<!-- project card details container -->
 				<div>
+					
+						<!-- project title -->
+					<h3>Portfolio</h3>
+
+					<p> The inspiration behind this portfolio is to create a simple page that will represent my previous project. The touch of green is representing my love for nature.
+						 </p>
+
 					<div class="hash-tags">
 						<span>#HTML</span>
 						<span>#CSS</span>
-						<span>#responsive</span>
+						<span>#javascript</span>
 					</div>
 
-						<!-- project title -->
-					<h3>Recipe Blog</h3>
-
-					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
 
 					<!-- buttons container -->
 					<div class="demo-code-button">
@@ -198,21 +213,22 @@
 			<section class="project-card">
 				<!-- project picture -->
 				<div class="image-con">
-					<img src="gallery1.png" alt="gallery">
+					<img src="picture/gallery1.png" alt="gallery">
 				</div>
 
 				<!-- project card details container -->
 				<div>
+				
+						<!-- project title -->
+					<h3>Gallery</h3>
+
+					<p>A gallery page that put my layout skill into test. It is pixel-perfect with the figma design provided. Grid and flex-box were used to complete the project. It is fully responsive.</p>
 					<div class="hash-tags">
 						<span>#HTML</span>
 						<span>#CSS</span>
 						<span>#responsive</span>
 					</div>
 
-						<!-- project title -->
-					<h3>Gallery</h3>
-
-					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
 
 					<!-- buttons container -->
 					<div class="demo-code-button">
@@ -230,21 +246,25 @@
 			<section class="project-card">
 				<!-- project picture -->
 				<div class="image-con">
-					<img src="interior.png" alt="interior">
+					<img src="picture/interior.png" alt="interior">
 				</div>
 
 				<!-- project card details container -->
 				<div >
-					<div class="hash-tags">
-						<span>#HTML</span>
-						<span>#CSS</span>
-						<span>#responsive</span>
-					</div>
+					
 
 						<!-- project title -->
 					<h3>Interior Consultant</h3>
 
-					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
+					<p>This project satisfied all the users story and it is pixel-perfect with the figma design. Mobile-first approach was implemented.</p>
+
+					<!-- hash tag container -->
+					<div class="hash-tags">
+						<span>#HTML</span>
+						<span>#CSS</span>
+						<span>#Javascript</span>
+						<span>#responsive</span>
+					</div>
 
 					<!-- buttons container -->
 					<div class="demo-code-button">
@@ -262,21 +282,23 @@
 			<section class="project-card">
 				<!-- project picture -->
 				<div class="image-con">
-					<img src="checkout.png" alt="checkout">
+					<img src="picture/checkout.png" alt="checkout">
 				</div>
 
 				<!-- project card details container -->
 				<div>
-					<div class="hash-tags">
-						<span>#HTML</span>
-						<span>#CSS</span>
-						<span>#responsive</span>
-					</div>
 
 						<!-- project title -->
 					<h3>checkout page</h3>
 
-					<p>In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. I implemented a mobile-first approach. </p>
+					<p>A project that shows the checkout page of an ecommerce platform. It is a demo and it allows the user to select the number of project. It has a shipping form with basic form validation</p>
+
+					<!-- Hash tag container -->
+					<div class="hash-tags">
+						<span>#HTML</span>
+						<span>#CSS</span>
+						<span>#javascript</span>
+					</div>
 
 					<!-- buttons container -->
 					<div class="demo-code-button">
@@ -294,7 +316,7 @@
 
 		</section>
 
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div>
 				<div class="contact-title">
 						<h3>Contact</h3>
@@ -303,10 +325,22 @@
 
 				<!-- contact icons -->
 				<div class="contact-icons">
-					<a href="https://www.linkedin.com/in/saolalekan/"><i class="fa-brands fa-linkedin-in"></i></a>
-					<a href="https://twitter.com/_devfocus"><i class="fa-brands fa-twitter"></i></a>
-					<a href="https://github.com/S-Abdullahi"><i class="fa-brands fa-github"></i></a>
-					<i class="fa-solid fa-envelope"></i>
+					<div class="icons-div">
+						<a href="https://www.linkedin.com/in/saolalekan/"><i class="fa-brands fa-linkedin-in"></i></a>
+					</div>
+
+					<div class="icons-div">
+						<a href="https://twitter.com/_devfocus"><i class="fa-brands fa-twitter"></i></a>
+					</div>
+
+					<div class="icons-div">
+						<a href="https://github.com/S-Abdullahi"><i class="fa-brands fa-github"></i></a>
+					</div>
+
+					<div class="icons-div">
+						<a href="mailto:salawu.abdullahi01@gmail.com"><i class="fa-solid fa-envelope"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
